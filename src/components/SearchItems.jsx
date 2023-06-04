@@ -2,7 +2,7 @@ import React from 'react'
 
 const SearchItems = () => {
   return (
-    <div>SearchItems</div>
+    <div className='text-center pt-80 min-h-screen'>SearchItems</div>
   )
 }
 
