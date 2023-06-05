@@ -28,8 +28,8 @@ const Navbar = () => {
         },
         {
             id:4,
-            name:'Tech Blogs',
-            path: 'techblogs'
+            name:'Blogs',
+            path: 'blogs'
         },
         {
             id:5,

@@ -1,5 +1,5 @@
 import React from "react";
-import Post from "./Post";
+import Posts from "./Posts";
 
 
 
@@ -15,7 +15,7 @@ const Jobs = () => {
         </p>
       </div>
       <div className="w-full md:w-5/6 h-fit m-auto mt-10 md:mt-20 flex flex-wrap px-4 md:px-10 justify-between text-gray-700">
-        <Post />
+        <Posts type={"job"} />
       </div>
     </div>
   );

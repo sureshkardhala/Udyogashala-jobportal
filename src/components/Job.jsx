@@ -1,7 +1,7 @@
 import React from "react";
 import JobAlign from "./JobAlign";
 import JobApply from "./JobApply";
-import JobDescription from "./JobDescription";
+import PostDescription from "./PostDescription";
 
 const Job = () => {
   return (
@@ -10,7 +10,9 @@ const Job = () => {
         <div className="w-full md:w-[90%] h-fit md:h-12  flex flex-wrap md:flex-row m-auto text-gray-500  font-medium space-x-5">
           <JobAlign />
         </div>
-        <JobDescription />
+        <div className="w-full md:w-2/3 h-fit">
+          <PostDescription />
+        </div>
         <JobApply />
       </div>
     </div>

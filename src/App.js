@@ -16,6 +16,7 @@ import Register from "./components/Admin/Register";
 import Privacy from "./components/Privacy";
 import NotFound from "./components/NotFound";
 import Disclaimer from "./components/Disclaimer";
+import Blog from "./components/Blog";
 
 const App = () => {
   const routes = [
@@ -32,40 +33,45 @@ const App = () => {
     {
       id: 3,
       element: <Job />,
-      path: "career/:title/*",
+      path: "job/:title/*",
     },
     {
       id: 4,
       element: <Techblogs />,
-      path: "techblogs",
+      path: "blogs",
     },
     {
       id: 5,
+      element: <Blog />,
+      path: "blog/:title/*",
+    },
+    {
+      id: 6,
       element: <About />,
       path: "about",
     },
     {
-      id: 6,
+      id: 7,
       element: <Contact />,
       path: "contact",
     },
     {
-      id: 7,
+      id: 8,
       element: <SearchItems />,
       path: "search",
     },
     {
-      id: 8,
+      id: 9,
       element: <Privacy />,
       path: "privacy",
     },
     {
-      id: 9,
+      id: 10,
       element: <Disclaimer />,
       path: "disclaimer",
     },
     {
-      id: 10,
+      id: 11,
       element: <NotFound />,
       path: "*",
     },
