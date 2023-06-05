@@ -55,7 +55,7 @@ const SocialMedia = () => {
       },
   ];
   return (
-    <div className="w-full px-3 py-4 md:py-10  h-fit m-auto mt-10 space-y-4 md:mt-40 bg-gradient-to-r from-violet-100 via-red-50 to-sky-100">
+    <div className="w-full px-3 py-4 md:py-10  h-fit m-auto mt-10 space-y-4 md:mt-40 ">
         <p className="w-fit m-auto text-2xl text-gray-800 cursor-pointer text-center font-semibold border-b-[2px] border-violet-500 py-1">
             Our Social Media
           </p>

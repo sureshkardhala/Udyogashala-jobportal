@@ -44,7 +44,7 @@ const Navbar = () => {
     ];
   return (
     <div className="w-full h-fit bg-white">
-    <div className="w-full h-20 px-4 md:px-16 py-4 shadow-lg shadow-gray-200 mb-4">
+    <div className="w-full h-20 px-4 md:px-16 py-4 shadow-lg shadow-gray-200 md:mb-4">
         <div className="w-full h-12 flex flex-wrap justify-between py-2">
             <div>
                 <Link to="home" className="text-2xl font-semibold">

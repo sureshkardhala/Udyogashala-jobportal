@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="w-full  h-fit m-auto flex flex-wrap md:p-4 bg-gradient-to-r from-violet-50 via-red-50 to-sky-50  border-[1px]">
+    <div className="w-full  h-fit m-auto flex flex-wrap md:p-4 bg-gray-50 shadow-xl shadow-gray-200  border-[1px]">
     <div className="w-full md:w-[40%] h-80 p-2">
       <img
         src="/images/banner.jpg"
