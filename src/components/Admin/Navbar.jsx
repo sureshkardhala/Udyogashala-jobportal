@@ -29,12 +29,12 @@ const Navbar = () => {
         {
             id:4,
             name:'Upload Job',
-            path: 'uploadjob'
+            path: 'upload/job'
         },
         {
             id:5,
             name: 'Upload Blog',
-            path: 'uploadblog'
+            path: 'upload/blog'
         },
         {
             id:6,

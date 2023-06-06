@@ -9,14 +9,15 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import SearchItems from "./components/SearchItems";
 import AdminLayout from "./components/AdminLayout";
-import UploadJob from "./components/Admin/UploadJob";
-import UploadBlog from "./components/Admin/UploadBlog";
 import Login from "./components/Admin/Login";
 import Register from "./components/Admin/Register";
 import Privacy from "./components/Privacy";
 import NotFound from "./components/NotFound";
 import Disclaimer from "./components/Disclaimer";
 import Blog from "./components/Blog";
+import Upload from "./components/Admin/Upload";
+import Update from "./components/Admin/Update";
+import AdminHome from "./components/Admin/AdminHome";
 
 const App = () => {
   const routes = [
@@ -33,7 +34,7 @@ const App = () => {
     {
       id: 3,
       element: <Job />,
-      path: "job/:title/*",
+      path: "job/:title",
     },
     {
       id: 4,
@@ -43,7 +44,7 @@ const App = () => {
     {
       id: 5,
       element: <Blog />,
-      path: "blog/:title/*",
+      path: "blog/:title",
     },
     {
       id: 6,
@@ -79,24 +80,30 @@ const App = () => {
   const adminRoutes = [
     {
       id: 1,
-      element: <UploadJob />,
-      path: "uploadjob",
-    },
-    {
-      id: 2,
-      element: <UploadBlog />,
-      path: "uploadblog",
-    },
-    {
-      id: 3,
       element: <Login />,
       path: "login",
     },
     {
-      id: 1,
+      id: 2,
       element: <Register />,
       path: "register",
     },
+    {
+      id: 3,
+      element: <AdminHome />,
+      path: "home",
+    },
+    {
+      id: 4,
+      element: <Upload/>,
+      path: "upload/:name",
+    },
+    {
+      id:5,
+      element: <Update />,
+      path: "update/:name/:id"
+    }
+    
   ];
   return (
     <BrowserRouter>
@@ -109,6 +116,7 @@ const App = () => {
           
         </Route>
         <Route path="admin" element={<AdminLayout />}>
+            <Route index element={<AdminHome />} />
             {adminRoutes.map(({ id, element, path }) => (
               <Route path={path} element={element} key={id} />
             ))}
