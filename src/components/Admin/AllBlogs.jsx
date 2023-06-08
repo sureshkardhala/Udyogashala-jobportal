@@ -11,7 +11,6 @@ const AllBlogs = () => {
           <Post/>
           <Post/>
           <Post/>
-
         </div>
   )
 }

@@ -84,7 +84,7 @@ const Navbar = () => {
             </div>
         </div>
     </div>
-     {nav && (<div className="w-full md:hidden min-h-screen h-fit bg-gradient-to-b from-black to-gray-700 absolute left-0 top-20">
+     {nav && (<div className="w-full md:hidden h-full bg-gradient-to-b from-black to-gray-700 absolute left-0 top-20">
      <nav className="w-1/2 m-auto mt-20 space-y-20 text-center">
                 {links.map(({ id, name, path }) => (
                 <li 
@@ -97,7 +97,6 @@ const Navbar = () => {
                     </Link>
                 </li>
                 ))}   
-                
                 </nav>
      </div>)}
      </div>

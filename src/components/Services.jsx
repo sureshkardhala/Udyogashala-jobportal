@@ -60,7 +60,7 @@ const Services = () => {
         </p>
         <p className="flex flex-row space-x-1 mt-1">
           <HiOutlineClock size={20} className="text-sky-500" />
-          <span>Best Interview preparation content</span>
+          <span className='text-left'>Best Interview preparation content</span>
         </p>
         <div className="mt-4 ">
         <Link to={"../jobs"}>

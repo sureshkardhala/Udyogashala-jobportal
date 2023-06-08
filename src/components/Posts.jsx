@@ -24,7 +24,7 @@ const Posts = ({ type }) => {
             transactions.
           </p>
         </div>
-        <div className="w-full h-fit md:h-12  flex flex-wrap md:flex-row p-2  font-medium space-x-5">
+        <div className="w-full h-fit md:h-12  flex flex-wrap md:flex-row p-2  font-medium md:space-x-5">
           {isJob && <JobAlign />}
           <p className="md:block hidden">
             <Link to={path} className="text-violet-700 font-semibold ">
